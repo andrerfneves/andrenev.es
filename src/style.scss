@@ -1,0 +1,119 @@
+@import './scss/constants.scss';
+@import './scss/base.scss';
+@import './scss/queries.scss';
+
+.neves {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -3rem;
+  }
+
+  &__avatar {
+    background: $white;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+
+    img {
+      width: $image-size;
+    }
+  }
+
+  &__name {
+    font-size: $font-title;
+    font-weight: $bold;
+    color: $white;
+  }
+
+  &__role {
+    padding-top: 0.75rem;
+    font-size: $font-subtitle;
+    color: $white;
+    margin-bottom: 3rem;
+  }
+
+  &__links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2.25rem;
+
+    &-div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      max-width: 25rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      > a {
+        margin-bottom: 1rem;
+      }
+
+      @include larger-than(mobile) {
+        margin-bottom: 1rem;
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__link {
+    color: $link;
+    padding: 0 1rem;
+    text-decoration: none;
+    font-size: $font-link;
+
+    &:hover {
+      font-weight: $bold;
+    }
+  }
+
+  &__not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+
+    span {
+      font-family: $font-default;
+      font-weight: $bold;
+      font-size: $font-not-found;
+    }
+
+    p {
+      font-family: $font-default;
+      font-size: $font-subtitle;
+    }
+
+    a {
+      font-family: $font-default;
+      font-size: $font-subtitle;
+      text-decoration: none;
+      color: $white;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__section-title {
+    margin: 1rem;
+    color: $white;
+  }
+}
+
+.case-studies {
+  &__container {
+    color: $white;
+  }
+}

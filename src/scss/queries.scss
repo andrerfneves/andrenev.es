@@ -1,0 +1,15 @@
+// Media Queries Mixins
+
+$mqs: (
+  smallMobile: 400 / 16 * 1rem,
+  mobile: 700 / 16 * 1rem,
+  tablet: 1024 / 16 * 1rem,
+  desktop: 1280 / 16 * 1rem,
+);
+
+@mixin larger-than($size) {
+  $width: #{map-get($mqs, $size)};
+  @media (min-width: $width) {
+    @content;
+  }
+}
