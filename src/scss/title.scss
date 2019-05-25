@@ -1,0 +1,25 @@
+.title-wrapper {
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  &__url {
+    font-style: italic;
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    color: $link;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}

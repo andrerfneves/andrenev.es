@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import omit from 'lodash.omit';
 import mainImage from '../assets/picture.jpg';
 import { CONTACT, CASE_STUDIES } from '../constants';
-import '../style.scss';
+import '../scss/styles.scss';
 
 // Helpers
 const renderNewLinkElement = (el) => (
@@ -31,13 +31,13 @@ const renderContactRow = () => CONTACT.map((item) => renderNewLinkElement(item))
 const renderHeader = () => (
   <Fragment>
     <div
-      className="neves__avatar"
+      className='neves__avatar'
       style={{ backgroundImage: `url(${mainImage})` }}
     />
-    <div className="neves__name">
+    <div className='neves__name'>
       André Neves
     </div>
-    <div className="neves__role">
+    <div className='neves__role'>
       Creative Technical Lead
     </div>
   </Fragment>
@@ -53,11 +53,11 @@ export const HomeView = () => (
   <div className='neves__container'>
     <div className='neves__links-container'>
       {renderHeader()}
-      {renderTitle('Case Studies')}
+      {renderTitle('Latest Case Studies')}
       <div className='neves__links-container-div'>
         {renderCaseStudiesRow()}
       </div>
-      {renderTitle('Links')}
+      {renderTitle('Links & Contact')}
       <div className='neves__links-container-div'>
         {renderContactRow()}
       </div>
