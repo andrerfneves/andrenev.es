@@ -19,20 +19,23 @@ import {
   LIGHTWORK_ROUTE,
   BIG_HUMAN_ROUTE,
 } from './constants/routes';
+import { ScrollTop } from './components/scroll-top';
 
 export const App = () => (
   <HashRouter>
-    <main className='container'>
-      <Switch>
-        <Route exact path={HOME_ROUTE} component={HomeView} />
-        <Route exact path={ZEPIO_WALLET_ROUTE} component={ZepioView} />
-        <Route exact path={MONO_ROUTE} component={MonoView} />
-        <Route exact path={LIGHTNING_DECODER_ROUTE} component={LightningDecoderView} />
-        <Route exact path={LIGHTWORK_ROUTE} component={LightworkView} />
-        <Route exact path={KOALA_STUDIO_ROUTE} component={KoalaView} />
-        <Route exact path={BIG_HUMAN_ROUTE} component={BigHumanView} />
-        <Route component={NotFoundView} />
-      </Switch>
-    </main>
+    <ScrollTop>
+      <main className='container'>
+        <Switch>
+          <Route exact path={HOME_ROUTE} component={HomeView} />
+          <Route exact path={ZEPIO_WALLET_ROUTE} component={ZepioView} />
+          <Route exact path={MONO_ROUTE} component={MonoView} />
+          <Route exact path={LIGHTNING_DECODER_ROUTE} component={LightningDecoderView} />
+          <Route exact path={LIGHTWORK_ROUTE} component={LightworkView} />
+          <Route exact path={KOALA_STUDIO_ROUTE} component={KoalaView} />
+          <Route exact path={BIG_HUMAN_ROUTE} component={BigHumanView} />
+          <Route component={NotFoundView} />
+        </Switch>
+      </main>
+    </ScrollTop>
   </HashRouter>
 );

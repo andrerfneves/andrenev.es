@@ -1,0 +1,10 @@
+.image-component {
+  img {
+    width: 100%;
+
+    @include larger-than(mobile) {
+      width: 650px;
+      margin-left: -25px;
+    }
+  }
+}

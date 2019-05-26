@@ -13,7 +13,7 @@ export const CASE_STUDIES = [
   { to: KOALA_STUDIO_ROUTE, title: 'Koala Studio' },
   { to: LIGHTWORK_ROUTE, title: 'Lightwork' },
   { to: LIGHTNING_DECODER_ROUTE, title: 'Lightning Decoder' },
-  { to: MONO_ROUTE, title: 'Mono Tray' },
+  // { to: MONO_ROUTE, title: 'Mono Tray' },
 ];
 
 export const CONTACT = [
