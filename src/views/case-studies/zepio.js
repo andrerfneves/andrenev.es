@@ -32,29 +32,17 @@ export const ZepioView = () => (
     />
     <BodyComponent
       body={[
-        'Throughout the building process of the Lightwork prototype during the Chaincode Labs Lightning Network residency program, I found myself constantly decoding BOLT11 invoices, to truly understand what was going on under the hood. Because of this constant need, I built a quick internal tool to speed up the process.',
-        'After discussing the use-cases for this tool with some colleagues at the residency, I decided to give it a UI/UX lift and release it under the name Lightning Decoder.'
+        'Zepio is an open source shielded-address-first sapling-enabled cross-platform desktop wallet for the Zcash blockchain. It is an initiative put forth through a partnership with the Zcash Foundation to continue pushing the boundaries of adoption of Zcash.',
+        'The application is cross-platform, working across Linux, Windows and macOS systems. It boasts support for `mainnet` and `testnet` Zcash chains, a clean and modern user interface, as well as support for light and dark themes. With Zepio, users are able to send and receive ZEC with ease - securely and privately - knowing that the wallet is geared for improving your financial privacy by leveraging latest Sapling capabilities.'
       ]}
     />
     <ImageComponent
       source={zepioDashboardImg}
       alt='Zepio'
     />
-    <BodyComponent
-      body={[
-        'Throughout the building process of the Lightwork prototype during the Chaincode Labs Lightning Network residency program, I found myself constantly decoding BOLT11 invoices, to truly understand what was going on under the hood. Because of this constant need, I built a quick internal tool to speed up the process.',
-        'After discussing the use-cases for this tool with some colleagues at the residency, I decided to give it a UI/UX lift and release it under the name Lightning Decoder.'
-      ]}
-    />
     <ImageComponent
       source={zepioDetailsImg}
       alt='Zepio'
-    />
-    <BodyComponent
-      body={[
-        'Throughout the building process of the Lightwork prototype during the Chaincode Labs Lightning Network residency program, I found myself constantly decoding BOLT11 invoices, to truly understand what was going on under the hood. Because of this constant need, I built a quick internal tool to speed up the process.',
-        'After discussing the use-cases for this tool with some colleagues at the residency, I decided to give it a UI/UX lift and release it under the name Lightning Decoder.'
-      ]}
     />
     <ImageComponent
       source={zepioSendingImg}
@@ -62,8 +50,7 @@ export const ZepioView = () => (
     />
     <BodyComponent
       body={[
-        'Throughout the building process of the Lightwork prototype during the Chaincode Labs Lightning Network residency program, I found myself constantly decoding BOLT11 invoices, to truly understand what was going on under the hood. Because of this constant need, I built a quick internal tool to speed up the process.',
-        'After discussing the use-cases for this tool with some colleagues at the residency, I decided to give it a UI/UX lift and release it under the name Lightning Decoder.'
+        'The code is completely open source and licensed through the MIT license. Although it is a full-node wallet (users have to have the full blockchain on their disks), its core was architected in a manner that allows for easy swap to a light-client node, once it becomes available on Zcash.'
       ]}
     />
   </div>

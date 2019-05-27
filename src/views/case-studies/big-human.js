@@ -5,13 +5,13 @@ import {
   HeaderComponent,
   BodyComponent,
   LogoComponent,
-  ImageComponent,
+  ShowcaseComponent,
 } from '../../components';
 import { HOME_ROUTE } from '../../constants/routes';
+import { BIG_HUMAN_SHOWCASES } from '../../constants/bighuman';
 import { getNextCaseStudyRoute } from '../../utils';
 
 import bigHumanLogo from '../../assets/case-studies/bighuman.png';
-import bigHumanImg from '../../assets/case-studies/zepio/dashboard.png';
 
 export const BigHumanView = () => (
   <div className='case-studies__container'>
@@ -30,19 +30,12 @@ export const BigHumanView = () => (
     />
     <BodyComponent
       body={[
-        'Throughout the building process of the Lightwork prototype during the Chaincode Labs Lightning Network residency program, I found myself constantly decoding BOLT11 invoices, to truly understand what was going on under the hood. Because of this constant need, I built a quick internal tool to speed up the process.',
-        'After discussing the use-cases for this tool with some colleagues at the residency, I decided to give it a UI/UX lift and release it under the name Lightning Decoder.'
+        'Big Human is a leading digital product studio located in New York City. It is comprised of Product, Strategy, Design and Engineering teams and experts building incredible digital experiences online.',
+        'As Head of Engineering, I oversee all software development activities in the company, ranging from hands-on architectural programming work, to client and business development meetings, going through technical project estimation, and team management, mentoring and resourcing.',
+        'Along with an awesome team of other 9 junior and senior engineers, working across both web and mobile environments, the Big Human team ships high quality products that continue to blow past expectations.' ,
+        'Some of our latest released projects follow below:'
       ]}
     />
-    <ImageComponent
-      source={bigHumanImg}
-      alt='Big Human'
-    />
-    <BodyComponent
-      body={[
-        'Throughout the building process of the Lightwork prototype during the Chaincode Labs Lightning Network residency program, I found myself constantly decoding BOLT11 invoices, to truly understand what was going on under the hood. Because of this constant need, I built a quick internal tool to speed up the process.',
-        'After discussing the use-cases for this tool with some colleagues at the residency, I decided to give it a UI/UX lift and release it under the name Lightning Decoder.'
-      ]}
-    />
+    {BIG_HUMAN_SHOWCASES.map(item => <ShowcaseComponent {...item} />)}
   </div>
 );
